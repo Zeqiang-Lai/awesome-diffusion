@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author"
+          content="Zeqiang Lai"
+    />
+    <title>Awesome Diffusion</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet"/>
+    <link href="sidebars.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-md fixed-top bg-light">
+    <div class="container">
+        <button
+                class="navbar-toggler float-left"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Awesome Diffusion</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Paper</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                    Search
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid pt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 bd-sidebar" style="padding-right: 2rem">
+                <nav class="collapse show" id="bd-docs-nav">
+                    <ul class="list-unstyled">
+                            <li class="mb-1">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn rounded border-0 collapsed">
+                                        <strong>Vision</strong>
+                                    </button>
+                                    <span class="badge rounded-pill text-bg-secondary counter"> 144 </span>
+                                </div>
+                                <div class="collapse show" id="home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="image_generation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Image Generation
+                                                    </a>
+                                                    <div class="counter">74</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="segmentation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Segmentation
+                                                    </a>
+                                                    <div class="counter">3</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="image-to-image_translation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Image-to-Image Translation
+                                                    </a>
+                                                    <div class="counter">11</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="super_resolution.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Super Resolution
+                                                    </a>
+                                                    <div class="counter">11</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="image_editing.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Image Editing
+                                                    </a>
+                                                    <div class="counter">12</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="text-to-image.html"
+                                                       class="a-toggle link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Text-to-Image
+                                                    </a>
+                                                    <div class="counter">13</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="medical_imaging.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Medical Imaging
+                                                    </a>
+                                                    <div class="counter">12</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="video_generation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Video Generation
+                                                    </a>
+                                                    <div class="counter">4</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="point_cloud.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Point Cloud
+                                                    </a>
+                                                    <div class="counter">4</div>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn rounded border-0 collapsed">
+                                        <strong>Audio</strong>
+                                    </button>
+                                    <span class="badge rounded-pill text-bg-secondary counter"> 29 </span>
+                                </div>
+                                <div class="collapse show" id="home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="audio_generation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Audio Generation
+                                                    </a>
+                                                    <div class="counter">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="audio_conversion.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Audio Conversion
+                                                    </a>
+                                                    <div class="counter">1</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="audio_enhancement.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Audio Enhancement
+                                                    </a>
+                                                    <div class="counter">5</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="text-to-speech.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Text-to-Speech
+                                                    </a>
+                                                    <div class="counter">9</div>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn rounded border-0 collapsed">
+                                        <strong>Miscellaneous</strong>
+                                    </button>
+                                    <span class="badge rounded-pill text-bg-secondary counter"> 25 </span>
+                                </div>
+                                <div class="collapse show" id="home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="adversarial_attack_and_defense.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Adversarial Attack and Defense
+                                                    </a>
+                                                    <div class="counter">4</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="natural_language.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Natural Language
+                                                    </a>
+                                                    <div class="counter">2</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="time-series.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Time-Series
+                                                    </a>
+                                                    <div class="counter">3</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="molecule-generation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Molecule-Generation
+                                                    </a>
+                                                    <div class="counter">5</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="applications.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Applications
+                                                    </a>
+                                                    <div class="counter">11</div>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                    </ul>
+                </nav>
+                <button type="button" class="btn btn-light btn-sm mx-1" onclick="toggle_counter()">Toggle Counter</button>
+            </div>
+            <main class='col-md-9 pt-2' role="main">
+                <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> DiVAE: Photorealistic Images Synthesis with Denoising Diffusion Decoder  </div>
+                                <div> Jie Shi<sup>1</sup>, Chenfei Wu<sup>1</sup>, Jian Liang, Xiang Liu, Nan Duan </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2206.00386"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-06-01</div>
+                            </div>
+                            <div class="paper-date">2022-06-01</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding  </div>
+                                <div> Chitwan Saharia<sup>1</sup>, William Chan<sup>1</sup>, Saurabh Saxena, Lala Li, Jay Whang, Emily Denton, Seyed Kamyar Seyed Ghasemipour, Burcu Karagol Ayan, S. Sara Mahdavi, Rapha Gontijo Lopes, Tim Salimans, Jonathan Ho, David J Fleet, Mohammad Norouzi </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2205.11487"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-05-23</div>
+                            </div>
+                            <div class="paper-date">2022-05-23</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> More Control for Free! Image Synthesis with Semantic Diffusion Guidance  </div>
+                                <div> Xihui Liu, Dong Huk Park, Samaneh Azadi, Gong Zhang, Arman Chopikyan, Yuxiao Hu, Humphrey Shi, Anna Rohrbach, Trevor Darrell </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2112.05744"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-10</div>
+                            </div>
+                            <div class="paper-date">2021-12-10</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Improved Vector Quantized Diffusion Models  </div>
+                                <div> Zhicong Tang, Shuyang Gu, Jianmin Bao, Dong Chen, Fang Wen </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2205.16007"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/microsoft/VQ-Diffusion"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-05-31</div>
+                            </div>
+                            <div class="paper-date">2022-05-31</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Retrieval-Augmented Diffusion Models  </div>
+                                <div> Andreas Blattmann<sup>1</sup>, Robin Rombach<sup>1</sup>, Kaan Oktay, Björn Ommer </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2204.11824"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-04-25</div>
+                            </div>
+                            <div class="paper-date">2022-04-25</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Vector Quantized Diffusion Model for Text-to-Image Synthesis  </div>
+                                <div> Shuyang Gu, Dong Chen, Jianmin Bao, Fang Wen, Bo Zhang, Dongdong Chen, Lu Yuan, Baining Guo </div>
+                                <div>
+                                    CVPR 2022.
+                                        <a href="https://arxiv.org/abs/2111.14822"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/microsoft/VQ-Diffusion"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-11-29</div>
+                            </div>
+                            <div class="paper-date">2021-11-29</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Compositional Visual Generation with Composable Diffusion Models  </div>
+                                <div> Nan Liu<sup>1</sup>, Shuang Li<sup>1</sup>, Yilun Du<sup>1</sup>, Antonio Torralba, Joshua B. Tenenbaum </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2206.01714"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-06-03</div>
+                            </div>
+                            <div class="paper-date">2022-06-03</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Text2Human: Text-Driven Controllable Human Image Generation  </div>
+                                <div> Yuming Jiang, Shuai Yang, Haonan Qiu, Wayne Wu, Chen Change Loy, Ziwei Liu </div>
+                                <div>
+                                    ACM 2022.
+                                        <a href="https://arxiv.org/abs/2205.15996"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-05-31</div>
+                            </div>
+                            <div class="paper-date">2022-05-31</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Hierarchical Text-Conditional Image Generation with CLIP Latents  </div>
+                                <div> Aditya Ramesh, Prafulla Dhariwal, Alex Nichol, Casey Chu, Mark Chen </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2204.06125"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-04-13</div>
+                            </div>
+                            <div class="paper-date">2022-04-13</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> DiffusionCLIP: Text-guided Image Manipulation Using Diffusion Models  </div>
+                                <div> Gwanghyun Kim, Jong Chul Ye </div>
+                                <div>
+                                    CVPR 2022.
+                                        <a href="https://arxiv.org/abs/2110.02711"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-10-06</div>
+                            </div>
+                            <div class="paper-date">2021-10-06</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Blended Latent Diffusion  </div>
+                                <div> Omri Avrahami, Ohad Fried, Dani Lischinski </div>
+                                <div>
+                                    ACM 2022.
+                                        <a href="https://arxiv.org/abs/2206.02779"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://omriavrahami.com/blended-latent-diffusion-page/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                        <a href="https://github.com/omriav/blended-latent-diffusion"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-06-06</div>
+                            </div>
+                            <div class="paper-date">2022-06-06</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> KNN-Diffusion: Image Generation via Large-Scale Retrieval  </div>
+                                <div> Oron Ashual, Shelly Sheynin, Adam Polyak, Uriel Singer, Oran Gafni, Eliya Nachmani, Yaniv Taigman </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2204.02849"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-04-06</div>
+                            </div>
+                            <div class="paper-date">2022-04-06</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Blended Diffusion for Text-driven Editing of Natural Images  </div>
+                                <div> Omri Avrahami, Dani Lischinski, Ohad Fried </div>
+                                <div>
+                                    CVPR 2022.
+                                        <a href="https://arxiv.org/abs/2111.14818"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://omriavrahami.com/blended-diffusion-page/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                        <a href="https://github.com/omriav/blended-diffusion"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-11-29</div>
+                            </div>
+                            <div class="paper-date">2021-11-29</div>
+                        </li>
+                </ol>
+                <div class="mt-3 mb-3 text-center text-secondary">Counts - 13 &nbsp <a href="#">Back to
+                    top</a></div>
+            </main>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+<script src="sidebars.js"></script>
+<script>
+    function toggle_counter() {
+        const elements = document.getElementsByClassName("counter");
+        for (let i = 0; i < elements.length; i++) {
+            if (elements[i].style.display === "none") {
+                console.log(elements[i].style.display)
+                elements[i].style.display = "block";
+            } else {
+                elements[i].style.display = "none";
+            }
+        }
+    }
+</script>
+</body>
+</html>

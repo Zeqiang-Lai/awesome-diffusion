@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author"
+          content="Zeqiang Lai"
+    />
+    <title>Awesome Diffusion</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet"/>
+    <link href="sidebars.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-md fixed-top bg-light">
+    <div class="container">
+        <button
+                class="navbar-toggler float-left"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Awesome Diffusion</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Paper</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                    Search
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid pt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 bd-sidebar" style="padding-right: 2rem">
+                <nav class="collapse show" id="bd-docs-nav">
+                    <ul class="list-unstyled">
+                            <li class="mb-1">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn rounded border-0 collapsed">
+                                        <strong>Vision</strong>
+                                    </button>
+                                    <span class="badge rounded-pill text-bg-secondary counter"> 144 </span>
+                                </div>
+                                <div class="collapse show" id="home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="image_generation.html"
+                                                       class="a-toggle link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Image Generation
+                                                    </a>
+                                                    <div class="counter">74</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="segmentation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Segmentation
+                                                    </a>
+                                                    <div class="counter">3</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="image-to-image_translation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Image-to-Image Translation
+                                                    </a>
+                                                    <div class="counter">11</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="super_resolution.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Super Resolution
+                                                    </a>
+                                                    <div class="counter">11</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="image_editing.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Image Editing
+                                                    </a>
+                                                    <div class="counter">12</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="text-to-image.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Text-to-Image
+                                                    </a>
+                                                    <div class="counter">13</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="medical_imaging.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Medical Imaging
+                                                    </a>
+                                                    <div class="counter">12</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="video_generation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Video Generation
+                                                    </a>
+                                                    <div class="counter">4</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="point_cloud.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Point Cloud
+                                                    </a>
+                                                    <div class="counter">4</div>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn rounded border-0 collapsed">
+                                        <strong>Audio</strong>
+                                    </button>
+                                    <span class="badge rounded-pill text-bg-secondary counter"> 29 </span>
+                                </div>
+                                <div class="collapse show" id="home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="audio_generation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Audio Generation
+                                                    </a>
+                                                    <div class="counter">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="audio_conversion.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Audio Conversion
+                                                    </a>
+                                                    <div class="counter">1</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="audio_enhancement.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Audio Enhancement
+                                                    </a>
+                                                    <div class="counter">5</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="text-to-speech.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Text-to-Speech
+                                                    </a>
+                                                    <div class="counter">9</div>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn rounded border-0 collapsed">
+                                        <strong>Miscellaneous</strong>
+                                    </button>
+                                    <span class="badge rounded-pill text-bg-secondary counter"> 25 </span>
+                                </div>
+                                <div class="collapse show" id="home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="adversarial_attack_and_defense.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Adversarial Attack and Defense
+                                                    </a>
+                                                    <div class="counter">4</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="natural_language.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Natural Language
+                                                    </a>
+                                                    <div class="counter">2</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="time-series.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Time-Series
+                                                    </a>
+                                                    <div class="counter">3</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="molecule-generation.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Molecule-Generation
+                                                    </a>
+                                                    <div class="counter">5</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="applications.html"
+                                                       class="link-dark d-inline-flex text-decoration-none rounded"
+                                                    >
+                                                        Applications
+                                                    </a>
+                                                    <div class="counter">11</div>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                    </ul>
+                </nav>
+                <button type="button" class="btn btn-light btn-sm mx-1" onclick="toggle_counter()">Toggle Counter</button>
+            </div>
+            <main class='col-md-9 pt-2' role="main">
+                <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> ILVR: Conditioning Method for Denoising Diffusion Probabilistic Models  </div>
+                                <div> Jooyoung Choi, Sungwon Kim, Yonghyun Jeong, Youngjune Gwon, Sungroh Yoon </div>
+                                <div>
+                                    ICCV 2021 (Oral).
+                                        <a href="https://arxiv.org/abs/2108.02938"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/jychoi118/ilvr_adm"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-08-06</div>
+                            </div>
+                            <div class="paper-date">2021-08-06</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Generative Modeling by Estimating Gradients of the Data Distribution  </div>
+                                <div> Yang Song, Stefano Ermon </div>
+                                <div>
+                                    NeurIPS 2019.
+                                        <a href="https://arxiv.org/abs/1907.05600"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://yang-song.github.io/blog/2021/score/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                        <a href="https://github.com/ermongroup/ncsn"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2019-07-12</div>
+                            </div>
+                            <div class="paper-date">2019-07-12</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Global Context with Discrete Diffusion in Vector Quantised Modelling for Image Generation  </div>
+                                <div> Minghui Hu, Yujie Wang, Tat-Jen Cham, Jianfei Yang, P.N.Suganthan </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2112.01799"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-03</div>
+                            </div>
+                            <div class="paper-date">2021-12-03</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Progressive Distillation for Fast Sampling of Diffusion Models  </div>
+                                <div> Tim Salimans, Jonathan Ho </div>
+                                <div>
+                                    ICLR 2022.
+                                        <a href="https://arxiv.org/abs/2202.00512"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-02-01</div>
+                            </div>
+                            <div class="paper-date">2022-02-01</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Maximum Likelihood Training of Score-Based Diffusion Models  </div>
+                                <div> Yang Song<sup>1</sup>, Conor Durkan<sup>1</sup>, Iain Murray, Stefano Ermon </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2101.09258"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-01-22</div>
+                            </div>
+                            <div class="paper-date">2021-01-22</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Diffusion Schrödinger Bridge with Applications to Score-Based Generative Modeling  </div>
+                                <div> Valentin De Bortoli, James Thornton, Jeremy Heng, Arnaud Doucet </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2106.01357"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://jtt94.github.io/papers/schrodinger_bridge"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                        <a href="https://github.com/JTT94/diffusion_schrodinger_bridge"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-06-01</div>
+                            </div>
+                            <div class="paper-date">2021-06-01</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> SDEdit: Image Synthesis and Editing with Stochastic Differential Equations  </div>
+                                <div> Chenlin Meng, Yang Song, Jiaming Song, Jiajun Wu, Jun-Yan Zhu, Stefano Ermon </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2108.01073"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://sde-image-editing.github.io/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                        <a href="https://github.com/ermongroup/SDEdit"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-08-02</div>
+                            </div>
+                            <div class="paper-date">2021-08-02</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Diffusion Autoencoders: Toward a Meaningful and Decodable Representation  </div>
+                                <div> Konpat Preechakul, Nattanat Chatthee, Suttisak Wizadwongsa, Supasorn Suwajanakorn </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2111.15640"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://diff-ae.github.io/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-30</div>
+                            </div>
+                            <div class="paper-date">2021-12-30</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Analytic-DPM: an Analytic Estimate of the Optimal Reverse Variance in Diffusion Probabilistic Models  </div>
+                                <div> Fan Bao, Chongxuan Li, Jun Zhu, Bo Zhang </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2201.06503"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-01-17</div>
+                            </div>
+                            <div class="paper-date">2022-01-17</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Learning Energy-Based Models by Diffusion Recovery Likelihood  </div>
+                                <div> Ruiqi Gao, Yang Song, Ben Poole, Ying Nian Wu, Diederik P. Kingma </div>
+                                <div>
+                                    ICLR 2021.
+                                        <a href="https://arxiv.org/abs/2012.08125"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/ruiqigao/recovery_likelihood"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2020-12-15</div>
+                            </div>
+                            <div class="paper-date">2020-12-15</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Neural Stochastic Differential Equations: Deep Latent Gaussian Models in the Diffusion Limit  </div>
+                                <div> Belinda Tzen, Maxim Raginsky </div>
+                                <div>
+                                    arXiv 2019.
+                                        <a href="https://arxiv.org/abs/1905.09883"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2019-05-23</div>
+                            </div>
+                            <div class="paper-date">2019-05-23</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Maximum Likelihood Training of Implicit Nonlinear Diffusion Models  </div>
+                                <div> Dongjun Kim, Byeonghu Na, Se Jung Kwon, Dongsoo Lee, Wanmo Kang, Il-Chul Moon </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2205.13699"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-05-27</div>
+                            </div>
+                            <div class="paper-date">2022-05-27</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> DiffuseVAE: Efficient, Controllable and High-Fidelity Generation from Low-Dimensional Latents  </div>
+                                <div> Kushagra Pandey, Avideep Mukherjee, Piyush Rai, Abhishek Kumar </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2201.00308"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/kpandey008/DiffuseVAE"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-01-02</div>
+                            </div>
+                            <div class="paper-date">2022-01-02</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Elucidating the Design Space of Diffusion-Based Generative Models  </div>
+                                <div> Tero Karras, Miika Aittala, Timo Aila, Samuli Laine </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2206.00364"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-06-01</div>
+                            </div>
+                            <div class="paper-date">2022-06-01</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Conditional Image Generation with Score-Based Diffusion Models  </div>
+                                <div> Georgios Batzolis, Jan Stanczuk, Carola-Bibiane Schönlieb, Christian Etmann </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2111.13606"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-11-26</div>
+                            </div>
+                            <div class="paper-date">2021-11-26</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Deep Unsupervised Learning using Nonequilibrium Thermodynamics  </div>
+                                <div> Jascha Sohl-Dickstein, Eric A. Weiss, Niru Maheswaranathan, Surya Ganguli </div>
+                                <div>
+                                    ICML 2015.
+                                        <a href="https://arxiv.org/abs/1503.03585"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/Sohl-Dickstein/Diffusion-Probabilistic-Models"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2015-03-02</div>
+                            </div>
+                            <div class="paper-date">2015-03-02</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Generating High Fidelity Data from Low-density Regions using Diffusion Models  </div>
+                                <div> Vikash Sehwag, Caner Hazirbas, Albert Gordo, Firat Ozgenel, Cristian Canton Ferrer </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2203.17260"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-03-31</div>
+                            </div>
+                            <div class="paper-date">2022-03-31</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Structured Denoising Diffusion Models in Discrete State-Spaces  </div>
+                                <div> Jacob Austin<sup>1</sup>, Daniel D. Johnson<sup>1</sup>, Jonathan Ho, Daniel Tarlow, Rianne van den Berg </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2107.03006"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-07-07</div>
+                            </div>
+                            <div class="paper-date">2021-07-07</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> On Fast Sampling of Diffusion Probabilistic Models  </div>
+                                <div> Zhifeng Kong, Wei Ping </div>
+                                <div>
+                                    ICML Workshop 2021.
+                                        <a href="https://arxiv.org/abs/2106.00132"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/FengNiMa/FastDPM_pytorch"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-05-31</div>
+                            </div>
+                            <div class="paper-date">2021-05-31</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Dynamic Dual-Output Diffusion Models  </div>
+                                <div> Yaniv Benny, Lior Wolf </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2203.04304"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-03-08</div>
+                            </div>
+                            <div class="paper-date">2022-03-08</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Accelerating Diffusion Models via Early Stop of the Diffusion Process  </div>
+                                <div> Zhaoyang Lyu, Xudong XU, Ceyuan Yang, Dahua Lin, Bo Dai </div>
+                                <div>
+                                    ICML 2022.
+                                        <a href="https://arxiv.org/abs/2205.12524"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-05-25</div>
+                            </div>
+                            <div class="paper-date">2022-05-25</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> A Variational Perspective on Diffusion-Based Generative Models and Score Matching  </div>
+                                <div> Chin-Wei Huang, Jae Hyun Lim, Aaron Courville </div>
+                                <div>
+                                    ICML Workshop 2021.
+                                        <a href="https://arxiv.org/abs/2106.02808"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/CW-Huang/sdeflow-light"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-06-05</div>
+                            </div>
+                            <div class="paper-date">2021-06-05</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Unleashing Transformers: Parallel Token Prediction with Discrete Absorbing Diffusion for Fast High-Resolution Image Generation from Vector-Quantized Codes  </div>
+                                <div> Sam Bond-Taylor<sup>1</sup>, Peter Hessey<sup>1</sup>, Hiroshi Sasaki, Toby P. Breckon, Chris G. Willcocks </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2111.12701"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/samb-t/unleashing-transformers"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-11-24</div>
+                            </div>
+                            <div class="paper-date">2021-11-24</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Itô-Taylor Sampling Scheme for Denoising Diffusion Probabilistic Models using Ideal Derivatives  </div>
+                                <div> Hideyuki Tachibana, Mocho Go, Muneyoshi Inahara, Yotaro Katayama, Yotaro Watanabe </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2112.13339"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-26</div>
+                            </div>
+                            <div class="paper-date">2021-12-26</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Score-Based Generative Modeling through Stochastic Differential Equations  </div>
+                                <div> Yang Song, Jascha Sohl-Dickstein, Diederik P. Kingma, Abhishek Kumar, Stefano Ermon, Ben Poole </div>
+                                <div>
+                                    ICLR 2021 (Oral).
+                                        <a href="https://arxiv.org/abs/2011.13456"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/yang-song/score_sde"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2020-11-26</div>
+                            </div>
+                            <div class="paper-date">2020-11-26</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Variational Diffusion Models  </div>
+                                <div> Diederik P. Kingma<sup>1</sup>, Tim Salimans<sup>1</sup>, Ben Poole, Jonathan Ho </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2107.00630"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/revsic/jax-variational-diffwave"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-07-01</div>
+                            </div>
+                            <div class="paper-date">2021-07-01</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Cascaded Diffusion Models for High Fidelity Image Generation  </div>
+                                <div> Jonathan Ho<sup>1</sup>, Chitwan Saharia<sup>1</sup>, William Chan, David J. Fleet, Mohammad Norouzi, Tim Salimans </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2106.15282"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://cascaded-diffusion.github.io/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-05-30</div>
+                            </div>
+                            <div class="paper-date">2021-05-30</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models  </div>
+                                <div> Alex Nichol<sup>1</sup>, Prafulla Dhariwal<sup>1</sup>, Aditya Ramesh<sup>1</sup>, Pranav Shyam, Pamela Mishkin, Bob McGrew, Ilya Sutskever, Mark Chen </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2112.10741"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-20</div>
+                            </div>
+                            <div class="paper-date">2021-12-20</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Variational (Gradient) Estimate of the Score Function in Energy-based Latent Variable Models  </div>
+                                <div> Fan Bao, Kun Xu, Chongxuan Li, Lanqing Hong, Jun Zhu, Bo Zhang </div>
+                                <div>
+                                    ICML 2021.
+                                        <a href="https://arxiv.org/abs/2010.08258"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2020-10-16</div>
+                            </div>
+                            <div class="paper-date">2020-10-16</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Conditional Simulation Using Diffusion Schrödinger Bridges  </div>
+                                <div> Yuyang Shi, Valentin De Bortoli, George Deligiannidis, Arnaud Doucet </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2202.13460"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-02-27</div>
+                            </div>
+                            <div class="paper-date">2022-02-27</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Accelerating Score-based Generative Models for High-Resolution Image Synthesis  </div>
+                                <div> Hengyuan Ma, Li Zhang, Xiatian Zhu, Jingfeng Zhang, Jianfeng Feng </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2206.04029"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-06-08</div>
+                            </div>
+                            <div class="paper-date">2022-06-08</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Diffusion Normalizing Flow  </div>
+                                <div> Qinsheng Zhang, Yongxin Chen </div>
+                                <div>
+                                    NeurIPS 2021.
+                                        <a href="https://arxiv.org/abs/2110.07579"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/qsh-zh/DiffFlow"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-10-14</div>
+                            </div>
+                            <div class="paper-date">2021-10-14</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> High-Resolution Image Synthesis with Latent Diffusion Models  </div>
+                                <div> Robin Rombach<sup>1</sup>, Andreas Blattmann<sup>1</sup>, Dominik Lorenz, Patrick Esser, Björn Ommer </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2112.10752"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/CompVis/latent-diffusion"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-20</div>
+                            </div>
+                            <div class="paper-date">2021-12-20</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Deep Generative Learning via Schrödinger Bridge  </div>
+                                <div> Gefei Wang, Yuling Jiao, Qian Xu, Yang Wang, Can Yang </div>
+                                <div>
+                                    ICML 2021.
+                                        <a href="https://arxiv.org/abs/2106.10410"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-06-19</div>
+                            </div>
+                            <div class="paper-date">2021-06-19</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Diffusion Causal Models for Counterfactual Estimation  </div>
+                                <div> Pedro Sanchez, Sotirios A. Tsaftaris </div>
+                                <div>
+                                    PMLR 2022.
+                                        <a href="https://arxiv.org/abs/2202.10166"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-02-21</div>
+                            </div>
+                            <div class="paper-date">2022-02-21</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Subspace Diffusion Generative Models  </div>
+                                <div> Bowen Jing, Gabriele Corso, Renato Berlinghieri, Tommi Jaakkola </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2205.01490"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/bjing2016/subspace-diffusion"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-05-03</div>
+                            </div>
+                            <div class="paper-date">2022-05-03</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Denoising Diffusion Implicit Models*  </div>
+                                <div> Jiaming Song, Chenlin Meng, Stefano Ermon </div>
+                                <div>
+                                    ICLR 2021.
+                                        <a href="https://arxiv.org/abs/2010.02502"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/ermongroup/ddim"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2020-10-06</div>
+                            </div>
+                            <div class="paper-date">2020-10-06</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Fast Sampling of Diffusion Models with Exponential Integrator  </div>
+                                <div> Qinsheng Zhang, Yongxin Chen </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2204.13902"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-04-29</div>
+                            </div>
+                            <div class="paper-date">2022-04-29</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Gotta Go Fast When Generating Data with Score-Based Models  </div>
+                                <div> Alexia Jolicoeur-Martineau, Ke Li, Rémi Piché-Taillefer, Tal Kachman, Ioannis Mitliagkas </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2105.14080"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/AlexiaJM/score_sde_fast_sampling"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-05-28</div>
+                            </div>
+                            <div class="paper-date">2021-05-28</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Non Gaussian Denoising Diffusion Models  </div>
+                                <div> Eliya Nachmani<sup>1</sup>, Robin San Roman<sup>1</sup>, Lior Wolf </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2106.07582"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://enk100.github.io/Non-Gaussian-Denoising-Diffusion-Models/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-06-14</div>
+                            </div>
+                            <div class="paper-date">2021-06-14</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Improved Denoising Diffusion Probabilistic Models  </div>
+                                <div> Alex Nichol<sup>1</sup>, Prafulla Dhariwal<sup>1</sup> </div>
+                                <div>
+                                    ICLR 2021.
+                                        <a href="https://arxiv.org/abs/2102.09672"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/openai/improved-diffusion"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-02-18</div>
+                            </div>
+                            <div class="paper-date">2021-02-18</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Denoising Diffusion Gamma Models  </div>
+                                <div> Eliya Nachmani<sup>1</sup>, Robin San Roman<sup>1</sup>, Lior Wolf </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2110.05948"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-10-10</div>
+                            </div>
+                            <div class="paper-date">2021-10-10</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Diffusion-GAN: Training GANs with Diffusion  </div>
+                                <div> Zhendong Wang, Huangjie Zheng, Pengcheng He, Weizhu Chen, Mingyuan Zhou </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2206.02262"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-06-05</div>
+                            </div>
+                            <div class="paper-date">2022-06-05</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Heavy-tailed denoising score matching  </div>
+                                <div> Jacob Deasy, Nikola Simidjievski, Pietro Liò </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2112.09788"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-17</div>
+                            </div>
+                            <div class="paper-date">2021-12-17</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Adversarial score matching and improved sampling for image generation  </div>
+                                <div> Alexia Jolicoeur-Martineau<sup>1</sup>, Rémi Piché-Taillefer<sup>1</sup>, Rémi Tachet des Combes, Ioannis Mitliagkas </div>
+                                <div>
+                                    ICLR 2021.
+                                        <a href="https://arxiv.org/abs/2009.05475"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/AlexiaJM/AdversarialConsistentScoreMatching"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2020-09-11</div>
+                            </div>
+                            <div class="paper-date">2020-09-11</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> On Analyzing Generative and Denoising Capabilities of Diffusion-based Deep Generative Models  </div>
+                                <div> Kamil Deja, Anna Kuzina, Tomasz Trzciński, Jakub M. Tomczak </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2206.00070"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-05-31</div>
+                            </div>
+                            <div class="paper-date">2022-05-31</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> More Control for Free! Image Synthesis with Semantic Diffusion Guidance  </div>
+                                <div> Xihui Liu, Dong Huk Park, Samaneh Azadi, Gong Zhang, Arman Chopikyan, Yuxiao Hu, Humphrey Shi, Anna Rohrbach, Trevor Darrell </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2112.05744"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-10</div>
+                            </div>
+                            <div class="paper-date">2021-12-10</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Truncated Diffusion Probabilistic Models  </div>
+                                <div> Huangjie Zheng, Pengcheng He, Weizhu Chen, Mingyuan Zhou </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2202.09671"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-02-19</div>
+                            </div>
+                            <div class="paper-date">2022-02-19</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Score-based Generative Neural Networks for Large-Scale Optimal Transport  </div>
+                                <div> Max Daniels, Tyler Maunu, Paul Hand </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2110.03237"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-10-07</div>
+                            </div>
+                            <div class="paper-date">2021-10-07</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Diffusion Models Beat GANs on Image Synthesis  </div>
+                                <div> Prafulla Dhariwal<sup>1</sup>, Alex Nichol<sup>1</sup> </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2105.05233"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/openai/guided-diffusion"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-05-11</div>
+                            </div>
+                            <div class="paper-date">2021-05-11</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> High Fidelity Visualization of What Your Self-Supervised Representation Knows About  </div>
+                                <div> Florian Bordes, Randall Balestriero, Pascal Vincent </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2112.09164"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-16</div>
+                            </div>
+                            <div class="paper-date">2021-12-16</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> D2C: Diffusion-Denoising Models for Few-shot Conditional Generation  </div>
+                                <div> Abhishek Sinha<sup>1</sup>, Jiaming Song<sup>1</sup>, Chenlin Meng, Stefano Ermon </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2106.06819"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://d2c-model.github.io/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                        <a href="https://github.com/d2c-model/d2c-model.github.io"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-06-12</div>
+                            </div>
+                            <div class="paper-date">2021-06-12</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> A Continuous Time Framework for Discrete Denoising Models  </div>
+                                <div> Andrew Campbell, Joe Benton, Valentin De Bortoli, Tom Rainforth, George Deligiannidis, Arnaud Doucet </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2205.14987"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-05-30</div>
+                            </div>
+                            <div class="paper-date">2022-05-30</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Understanding DDPM Latent Codes Through Optimal Transport  </div>
+                                <div> Valentin Khrulkov, Ivan Oseledets </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2202.07477"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-02-14</div>
+                            </div>
+                            <div class="paper-date">2022-02-14</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Score-Based Generative Classifiers  </div>
+                                <div> Roland S. Zimmermann, Lukas Schott, Yang Song, Benjamin A. Dunn, David A. Klindt </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2110.00473"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-10-01</div>
+                            </div>
+                            <div class="paper-date">2021-10-01</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Denoising Diffusion Probabilistic Models  </div>
+                                <div> Jonathan Ho, Ajay Jain, Pieter Abbeel </div>
+                                <div>
+                                    NeurIPS 2020.
+                                        <a href="https://arxiv.org/abs/2006.11239"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/hojonathanho/diffusion"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                        <a href="https://github.com/pesser/pytorch_diffusion"
+                                           class="link-primary">Github2
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2020-06-19</div>
+                            </div>
+                            <div class="paper-date">2020-06-19</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Tackling the Generative Learning Trilemma with Denoising Diffusion GANs  </div>
+                                <div> Zhisheng Xiao, Karsten Kreis, Arash Vahdat </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2112.07804"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://nvlabs.github.io/denoising-diffusion-gan"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-15</div>
+                            </div>
+                            <div class="paper-date">2021-12-15</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Pseudo Numerical Methods for Diffusion Models on Manifolds  </div>
+                                <div> Luping Liu, Yi Ren, Zhijie Lin, Zhou Zhao </div>
+                                <div>
+                                    ICLR 2022.
+                                        <a href="https://arxiv.org/abs/2202.09778"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/luping-liu/PNDM"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-02-20</div>
+                            </div>
+                            <div class="paper-date">2022-02-20</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> On Conditioning the Input Noise for Controlled Image Generation with Diffusion Models  </div>
+                                <div> Vedant Singh<sup>1</sup>, Surgan Jandial<sup>1</sup>, Ayush Chopra, Siddharth Ramesh, Balaji Krishnamurthy, Vineeth N. Balasubramanian </div>
+                                <div>
+                                    arxiv 2022.
+                                        <a href="https://arxiv.org/abs/2205.03859"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-05-08</div>
+                            </div>
+                            <div class="paper-date">2022-05-08</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Image Super-Resolution via Iterative Refinement  </div>
+                                <div> Chitwan Saharia, Jonathan Ho, William Chan, Tim Salimans, David J. Fleet, Mohammad Norouzi </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2104.07636"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://iterative-refinement.github.io/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                        <a href="https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-04-15</div>
+                            </div>
+                            <div class="paper-date">2021-04-15</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Bilateral Denoising Diffusion Models  </div>
+                                <div> Max W. Y. Lam, Jun Wang, Rongjie Huang, Dan Su, Dong Yu </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2108.11514"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://bilateral-denoising-diffusion-model.github.io"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-08-26</div>
+                            </div>
+                            <div class="paper-date">2021-08-26</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Perception Prioritized Training of Diffusion Models  </div>
+                                <div> Jooyoung Choi, Jungbeom Lee, Chaehun Shin, Sungwon Kim, Hyunwoo Kim, Sungroh Yoon </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2204.00227"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/jychoi118/P2-weighting"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-04-01</div>
+                            </div>
+                            <div class="paper-date">2022-04-01</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Score-based Generative Modeling in Latent Space  </div>
+                                <div> Arash Vahdat<sup>1</sup>, Karsten Kreis<sup>1</sup>, Jan Kautz </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2106.05931"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-06-10</div>
+                            </div>
+                            <div class="paper-date">2021-06-10</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Few-Shot Diffusion Models  </div>
+                                <div> Giorgio Giannone, Didrik Nielsen, Ole Winther </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2205.15463"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-05-30</div>
+                            </div>
+                            <div class="paper-date">2022-05-30</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps  </div>
+                                <div> Cheng Lu, Yuhao Zhou, Fan Bao, Jianfei Chen, Chongxuan Li, Jun Zhu </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2206.00927"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-06-02</div>
+                            </div>
+                            <div class="paper-date">2022-06-02</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Score-Based Generative Modeling with Critically-Damped Langevin Diffusion  </div>
+                                <div> Tim Dockhorn, Arash Vahdat, Karsten Kreis </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2112.07068"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://nv-tlabs.github.io/CLD-SGM/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-12-14</div>
+                            </div>
+                            <div class="paper-date">2021-12-14</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Learning Fast Samplers for Diffusion Models by Differentiating Through Sample Quality  </div>
+                                <div> Daniel Watson, William Chan, Jonathan Ho, Mohammad Norouzi </div>
+                                <div>
+                                    ICLR 2022.
+                                        <a href="https://arxiv.org/abs/2202.05830"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-02-11</div>
+                            </div>
+                            <div class="paper-date">2022-02-11</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Improved Techniques for Training Score-Based Generative Models  </div>
+                                <div> Yang Song, Stefano Ermon </div>
+                                <div>
+                                    NeurIPS 2020.
+                                        <a href="https://arxiv.org/abs/2006.09011"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://github.com/ermongroup/ncsnv2"
+                                           class="link-primary">Github
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2020-06-16</div>
+                            </div>
+                            <div class="paper-date">2020-06-16</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> ImageBART: Bidirectional Context with Multinomial Diffusion for Autoregressive Image Synthesis  </div>
+                                <div> Patrick Esser<sup>1</sup>, Robin Rombach<sup>1</sup>, Andreas Blattmann<sup>1</sup>, Björn Ommer </div>
+                                <div>
+                                    NeurIPS 2021.
+                                        <a href="https://arxiv.org/abs/2108.08827"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                        <a href="https://compvis.github.io/imagebart/"
+                                           class="link-primary">Project
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-08-19</div>
+                            </div>
+                            <div class="paper-date">2021-08-19</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Learning to Efficiently Sample from Diffusion Probabilistic Models  </div>
+                                <div> Daniel Watson, Jonathan Ho, Mohammad Norouzi, William Chan </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2106.03802"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-06-07</div>
+                            </div>
+                            <div class="paper-date">2021-06-07</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Denoising Likelihood Score Matching for Conditional Score-based Data Generation  </div>
+                                <div> Chen-Hao Chao, Wei-Fang Sun, Bo-Wun Cheng, Yi-Chen Lo, Chia-Che Chang, Yu-Lun Liu, Yu-Lin Chang, Chia-Ping Chen, Chun-Yi Lee </div>
+                                <div>
+                                    ICLR 2022.
+                                        <a href="https://arxiv.org/abs/2203.14206"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-03-27</div>
+                            </div>
+                            <div class="paper-date">2022-03-27</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Noise Estimation for Generative Diffusion Models  </div>
+                                <div> Robin San-Roman<sup>1</sup>, Eliya Nachmani<sup>1</sup>, Lior Wolf </div>
+                                <div>
+                                    arXiv 2021.
+                                        <a href="https://arxiv.org/abs/2104.02600"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2021-04-06</div>
+                            </div>
+                            <div class="paper-date">2021-04-06</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Retrieval-Augmented Diffusion Models  </div>
+                                <div> Andreas Blattmann<sup>1</sup>, Robin Rombach<sup>1</sup>, Kaan Oktay, Björn Ommer </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2204.11824"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-04-25</div>
+                            </div>
+                            <div class="paper-date">2022-04-25</div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start list-item-flex">
+                            <div class="ms-2 me-auto paper-main">
+                                <div class="fw-bold"> Diffusion Models for Counterfactual Explanations  </div>
+                                <div> Guillaume Jeanneret, Loïc Simon, Frédéric Jurie </div>
+                                <div>
+                                    arXiv 2022.
+                                        <a href="https://arxiv.org/abs/2203.15636"
+                                           class="link-primary">Paper
+                                        </a> &nbsp
+                                </div>
+                                <div class="paper-date-inner">2022-03-29</div>
+                            </div>
+                            <div class="paper-date">2022-03-29</div>
+                        </li>
+                </ol>
+                <div class="mt-3 mb-3 text-center text-secondary">Counts - 74 &nbsp <a href="#">Back to
+                    top</a></div>
+            </main>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+<script src="sidebars.js"></script>
+<script>
+    function toggle_counter() {
+        const elements = document.getElementsByClassName("counter");
+        for (let i = 0; i < elements.length; i++) {
+            if (elements[i].style.display === "none") {
+                console.log(elements[i].style.display)
+                elements[i].style.display = "block";
+            } else {
+                elements[i].style.display = "none";
+            }
+        }
+    }
+</script>
+</body>
+</html>
