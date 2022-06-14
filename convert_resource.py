@@ -1,6 +1,6 @@
 import json
 from datetime import datetime
-
+import re
 
 def dmy_to_ymd(d):
     return datetime.strptime(d, '%d %b %Y').strftime('%Y-%m-%d')
@@ -36,15 +36,12 @@ with open('Resource.md', 'r') as f:
                 obj['title'] = item[0][2:-5]
                 obj['authors'] = item[1][1:-4]
 
-                links = item[2][:-1].strip().split(' ')
-                links = [link[1:-1] for link in links if link[1:-1]]
+                linkstr = item[2][:-1].strip()
+                links = re.findall("\[\[([^\]]*)\]\(([^\)]+)\)\]", linkstr)
                 links2 = {}
-                print(links)
-                for link in links:
-                    name, url = link.split(']')
-                    name = name[1:].strip()
-                    url = url[1:-1].strip()
-                    links2[name] = url
+                for name, href in links:
+                    links2[name] = href
+
                 obj['links'] = links2
 
                 obj['date'] = dmy_to_ymd(item[3].strip())

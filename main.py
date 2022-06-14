@@ -12,7 +12,7 @@ class Paper:
     def __init__(self, data):
         self.title = data['title']
         self.authors = data['authors']
-        self.source = data['source']
+        self.source = data.get('source', None)
         self.date = data['date']
         self.links = [Link(k, v) for k, v in data['links'].items()]
         self.field = data['field']
@@ -62,7 +62,7 @@ def find_all_fields(papers):
     return field_objs
 
 
-def main():
+def build_paper():
     with open('db.json', 'r') as f:
         db = json.load(f)
 
@@ -76,14 +76,38 @@ def main():
         first = True
         for field in fields:
             for task in field.tasks:
-                out = template.render(fields=fields, papers=task.papers, highlight_task=task)
+                out = template.render(fields=fields, papers=task.papers, highlight_task=task, section='paper')
+                with open(f'docs/{task.url_name}.html', 'w', encoding='utf-8') as fout:
+                    fout.write(out)
+                if first:
+                    with open(f'docs/index.html', 'w', encoding='utf-8') as fout:
+                        fout.write(out)
+                    first = False
+
+
+def build_resource():
+    with open('resource.json', 'r') as f:
+        db = json.load(f)
+
+    papers = [Paper(paper) for paper in db['resources']]
+
+    fields = find_all_fields(papers)
+
+    with open('docs/template.html', 'r') as fin:
+        template = Template(fin.read(), lstrip_blocks=True, trim_blocks=True)
+
+        first = True
+        for field in fields:
+            for task in field.tasks:
+                out = template.render(fields=fields, papers=task.papers, highlight_task=task, section='resource')
                 with open(f'docs/{task.url_name}.html', 'w') as fout:
                     fout.write(out)
                 if first:
-                    with open(f'docs/index.html', 'w') as fout:
+                    with open(f'docs/resource.html', 'w') as fout:
                         fout.write(out)
                     first = False
 
 
 if __name__ == '__main__':
-    main()
+    build_paper()
+    build_resource()

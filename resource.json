@@ -1,0 +1,95 @@
+{
+  "resources": [
+    {
+      "title": "Recent rise of diffusion-based models",
+      "authors": "Maciej Domaga\u8242a",
+      "links": {
+        "Website": "https://maciejdomagala.github.io/generative_models/2022/06/06/recent-rise-of-diffusion-based-models.html"
+      },
+      "date": "2022-06-06",
+      "field": "Resources",
+      "task": "Introductory Posts"
+    },
+    {
+      "title": "Introduction to Diffusion Models for Machine Learning",
+      "authors": "Ryan O'Connor",
+      "links": {
+        "Website": "https://www.assemblyai.com/blog/diffusion-models-for-machine-learning-introduction/"
+      },
+      "date": "2022-05-12",
+      "field": "Resources",
+      "task": "Introductory Posts"
+    },
+    {
+      "title": "Improving Diffusion Models as an Alternative To GANs",
+      "authors": "Arash Vahdat and Karsten Kreis",
+      "links": {
+        "Website-Part 1": "https://developer.nvidia.com/blog/improving-diffusion-models-as-an-alternative-to-gans-part-1/",
+        "Website-Part 2": "https://developer.nvidia.com/blog/improving-diffusion-models-as-an-alternative-to-gans-part-2/"
+      },
+      "date": "2022-04-26",
+      "field": "Resources",
+      "task": "Introductory Posts"
+    },
+    {
+      "title": "An introduction to Diffusion Probabilistic Models",
+      "authors": "Ayan Das",
+      "links": {
+        "Website": "https://ayandas.me/blog-tut/2021/12/04/diffusion-prob-models.html"
+      },
+      "date": "2021-12-04",
+      "field": "Resources",
+      "task": "Introductory Posts"
+    },
+    {
+      "title": "Introduction to deep generative modeling: Diffusion-based Deep Generative Models",
+      "authors": "Jakub Tomczak",
+      "links": {
+        "Website": "https://jmtomczak.github.io/blog/10/10_ddgms_lvm_p2.html"
+      },
+      "date": "2021-08-30",
+      "field": "Resources",
+      "task": "Introductory Posts"
+    },
+    {
+      "title": "What are Diffusion Models?",
+      "authors": "Lilian Weng",
+      "links": {
+        "Website": "https://lilianweng.github.io/lil-log/2021/07/11/diffusion-models.html"
+      },
+      "date": "2021-07-11",
+      "field": "Resources",
+      "task": "Introductory Posts"
+    },
+    {
+      "title": "Diffusion Models as a kind of VAE",
+      "authors": "Angus Turner",
+      "links": {
+        "Website": "https://angusturner.github.io/generative_models/2021/06/29/diffusion-probabilistic-models-I.html"
+      },
+      "date": "2021-06-29",
+      "field": "Resources",
+      "task": "Introductory Posts"
+    },
+    {
+      "title": "What are Diffusion Models?",
+      "authors": "Ari Seff",
+      "links": {
+        "Video": "https://www.youtube.com/watch?v=fbLgFrlTnGU&list=LL&index=2"
+      },
+      "date": "2022-04-20",
+      "field": "Resources",
+      "task": "Introductory Videos"
+    },
+    {
+      "title": "Diffusion models explained",
+      "authors": "AI Coffee Break with Letitia",
+      "links": {
+        "Video": "https://www.youtube.com/watch?v=344w5h24-h8&ab_channel=AICoffeeBreakwithLetitia"
+      },
+      "date": "2022-03-23",
+      "field": "Resources",
+      "task": "Introductory Videos"
+    }
+  ]
+}

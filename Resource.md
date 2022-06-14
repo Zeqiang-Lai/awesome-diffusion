@@ -35,7 +35,7 @@
 **Diffusion Models as a kind of VAE** \
 *Angus Turner* \
 [[Website](https://angusturner.github.io/generative_models/2021/06/29/diffusion-probabilistic-models-I.html)] \
-29 June 2021
+29 Jun 2021
 
 ### Introductory Videos
 
