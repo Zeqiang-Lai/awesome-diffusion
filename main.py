@@ -1,3 +1,5 @@
+import itertools
+
 from jinja2 import Template
 import json
 
@@ -27,6 +29,17 @@ class Field:
     @property
     def total(self):
         return sum([len(task.papers) for task in self.tasks])
+
+    @property
+    def url_name(self):
+        return self.name.lower().replace(' ', '_')
+
+    @property
+    def papers(self):
+        papers = list(itertools.chain(*[task.papers for task in self.tasks]))
+        papers = sorted(papers, key=lambda x: x.date)
+        papers.reverse()
+        return papers
 
 
 class Task:
@@ -79,10 +92,28 @@ def build_paper():
                 out = template.render(fields=fields, papers=task.papers, highlight_task=task, section='paper')
                 with open(f'docs/{task.url_name}.html', 'w', encoding='utf-8') as fout:
                     fout.write(out)
-                if first:
-                    with open(f'docs/index.html', 'w', encoding='utf-8') as fout:
-                        fout.write(out)
-                    first = False
+
+
+def build_field():
+    with open('db.json', 'r') as f:
+        db = json.load(f)
+
+    papers = [Paper(paper) for paper in db['papers']]
+
+    fields = find_all_fields(papers)
+
+    with open('docs/template.html', 'r') as fin:
+        template = Template(fin.read(), lstrip_blocks=True, trim_blocks=True)
+
+        first = True
+        for field in fields:
+            out = template.render(fields=fields, papers=field.papers, section='paper')
+            with open(f'docs/{field.url_name}.html', 'w', encoding='utf-8') as fout:
+                fout.write(out)
+            if first:
+                with open(f'docs/index.html', 'w', encoding='utf-8') as fout:
+                    fout.write(out)
+                first = False
 
 
 def build_resource():
@@ -111,3 +142,4 @@ def build_resource():
 if __name__ == '__main__':
     build_paper()
     build_resource()
+    build_field()
