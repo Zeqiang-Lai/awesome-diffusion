@@ -36,12 +36,10 @@ with open('Resource.md', 'r') as f:
                 obj['title'] = item[0][2:-5]
                 obj['authors'] = item[1][1:-4]
 
-                source, links = item[2][:-2].strip().split('.', maxsplit=1)
-                obj['source'] = source
-
-                links = links.strip().split(' ')
-                links = [link[1:-1] for link in links]
+                links = item[2][:-1].strip().split(' ')
+                links = [link[1:-1] for link in links if link[1:-1]]
                 links2 = {}
+                print(links)
                 for link in links:
                     name, url = link.split(']')
                     name = name[1:].strip()
@@ -53,7 +51,7 @@ with open('Resource.md', 'r') as f:
                 obj['field'] = field
                 obj['task'] = task
 
-                db['papers'].append(obj)
+                db['resources'].append(obj)
 
-    with open('db.json', 'w') as fout:
+    with open('resource.json', 'w') as fout:
         json.dump(db, fout)
