@@ -1,8 +1,24 @@
 /* Show it is fixed to the top */
 body {
-    min-height: 75rem;
+    /*min-height: 75rem;*/
     padding-top: 4.5rem;
 }
+
+.bd-content {
+    padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        /*min-height: 75rem;*/
+        padding-top: 0;
+    }
+
+    .bd-content {
+        padding-top: 5rem;
+    }
+}
+
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -68,7 +84,7 @@ body {
         .bd-sidebar {
             position: -webkit-sticky;
             position: sticky;
-            top: 3.5rem;
+            top: 4.5rem;
             z-index: 1000;
             height: calc(100vh - 3.5rem)
         }
