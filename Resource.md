@@ -3,7 +3,7 @@
 ### Introductory Posts
 
 **Recent rise of diffusion-based models** \
-*Maciej Domagała* \
+*Maciej Domagala* \
 [[Website](https://maciejdomagala.github.io/generative_models/2022/06/06/recent-rise-of-diffusion-based-models.html)] \
 06 Jun 2022
 
