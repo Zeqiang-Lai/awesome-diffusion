@@ -48,3 +48,25 @@
 *AI Coffee Break with Letitia* \
 [[Video](https://www.youtube.com/watch?v=344w5h24-h8&ab_channel=AICoffeeBreakwithLetitia)] \
 23 Mar 2022
+
+### Implementations
+
+**dalle-mini** \
+*borisdayma* \
+[[Github](https://github.com/borisdayma/dalle-mini)] \
+14 Jun 2022
+
+**denoising-diffusion-pytorch** \
+*lucidrains* \
+[[Github](https://github.com/lucidrains/denoising-diffusion-pytorch)] \
+13 Jun 2022
+
+**pytorch_diffusion** \
+*pesser* \
+[[Github](https://github.com/pesser/pytorch_diffusion)] \
+31 Jul 2020
+
+**diffusion_models: notebooks** \
+*acids-ircam* \
+[[Github](https://github.com/acids-ircam/diffusion_models)] \
+17 Jan 2022
