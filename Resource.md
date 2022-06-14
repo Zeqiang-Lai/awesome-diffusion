@@ -1,4 +1,5 @@
 ## Resources
+
 ### Introductory Posts
 
 **Recent rise of diffusion-based models** \
@@ -35,18 +36,6 @@
 *Angus Turner* \
 [[Website](https://angusturner.github.io/generative_models/2021/06/29/diffusion-probabilistic-models-I.html)] \
 29 June 2021
-
-### Introductory Papers
-
-**A Connection Between Score Matching and Denoising Autoencoders** \
-*Pascal Vincent* \
-Neural Computation 2011. [[Paper](http://www.iro.umontreal.ca/~vincentp/Publications/smdae_techreport.pdf)] \
-7 Jul 2011
-
-**Bayesian Learning via Stochastic Gradient Langevin Dynamics** \
-*Max Welling, Yee Whye Teh* \
-ICML 2011. [[Paper](https://www.stats.ox.ac.uk/~teh/research/compstats/WelTeh2011a.pdf)] [[Github](https://github.com/JavierAntoran/Bayesian-Neural-Networks#stochastic-gradient-langevin-dynamics-sgld)] \
-20 Apr 2022
 
 ### Introductory Videos
 

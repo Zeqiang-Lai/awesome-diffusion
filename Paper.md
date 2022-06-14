@@ -1038,3 +1038,15 @@ arXiv 2020. [[Paper](https://arxiv.org/abs/2011.06704)] [[Github](https://github
 *Chenhao Niu, Yang Song, Jiaming Song, Shengjia Zhao, Aditya Grover, Stefano Ermon* \
 AISTATS 2021. [[Paper](https://arxiv.org/abs/2003.00638)] [[Github](https://github.com/ermongroup/GraphScoreMatching)] \
 2 Mar 2020
+
+### Introductory
+
+**A Connection Between Score Matching and Denoising Autoencoders** \
+*Pascal Vincent* \
+Neural Computation 2011. [[Paper](http://www.iro.umontreal.ca/~vincentp/Publications/smdae_techreport.pdf)] \
+7 Jul 2011
+
+**Bayesian Learning via Stochastic Gradient Langevin Dynamics** \
+*Max Welling, Yee Whye Teh* \
+ICML 2011. [[Paper](https://www.stats.ox.ac.uk/~teh/research/compstats/WelTeh2011a.pdf)] [[Github](https://github.com/JavierAntoran/Bayesian-Neural-Networks#stochastic-gradient-langevin-dynamics-sgld)] \
+20 Apr 2022
