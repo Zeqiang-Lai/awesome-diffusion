@@ -28,14 +28,21 @@ class Field:
     def total(self):
         return sum([len(task.papers) for task in self.tasks])
 
+
 class Task:
     def __init__(self, name, papers):
         self.name = name
-        self.papers = papers
+        self._papers = papers
 
     @property
     def url_name(self):
         return self.name.lower().replace(' ', '_')
+
+    @property
+    def papers(self):
+        papers = sorted(self._papers, key=lambda x: x.date)
+        papers.reverse()
+        return papers
 
 
 def find_all_fields(papers):
